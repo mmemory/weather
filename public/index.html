@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <title>Weather App</title>
 </head>
-<body>
+<body ng-app="WeatherApp">
+
+<div weather-directive=""></div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="./vendor/angular/angular.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/services/WeatherDataService.js"></script>
+<script src="./js/directives/WeatherDirective.js"></script>
 </body>
 </html>
