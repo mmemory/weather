@@ -1,0 +1,22 @@
+{
+  "name": "weather-app",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Michael Memory"
+  ],
+  "license": "Apache 2.0",
+  "homepage": "https://github.com/mmemory/weather",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.7"
+  }
+}
