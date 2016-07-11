@@ -15,7 +15,12 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 // endpoints
-app.get('/api/weather/', WeatherData.getWeather);
+app.get('/api/weather/:cityName', function(req, res) {
+    //console.log('REQ', req);
+    //console.log('res', res);
+    console.log(req.cityName);
+    res.send('HELLO');
+});
 
 // server
 app.listen(port, function() {

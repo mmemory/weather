@@ -6,13 +6,14 @@ angular.module('WeatherApp')
             templateUrl: './templates/WeatherView.html',
             link: function(scope, elem, attrs) {
 
-                WeatherDataService.get()
-                    .then(function(data) {
-                        console.log(data);
-                        scope.test = data.data;
-                    }, function(err) {
-                        console.error('Error getting weather',err);
-                    });
+                scope.getData = function(city) {
+                    WeatherDataService.get(city)
+                        .then(function (data) {
+                            console.log(data);
+                        }, function (err) {
+                            console.error('Error getting weather', err);
+                        });
+                }
             }
         }
     }]);

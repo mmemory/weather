@@ -2,8 +2,8 @@ angular.module('WeatherApp')
     .factory('WeatherDataService', ['$http',function($http) {
 
         return {
-            get: function() {
-                return $http.get('/api/weather/');
+            get: function(city) {
+                return $http.get('/api/weather/'+city);
             }
         };
     }]);
