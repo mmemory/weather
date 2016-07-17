@@ -1,4 +1,21 @@
 <div>
-    <input type="text" ng-model="cityName">
-    <button ng-click="getData(cityName)">GET WEATHER</button>
+    <input type="text" ng-model="zipCode">
+    <button ng-click="getData(zipCode)">GET WEATHER</button>
+    <button ng-click="saveWeather(weatherData)">Save</button>
+
+    <div ng-if="weatherData">
+        <p>{{weatherData.location}}</p>
+        <p>{{weatherData.weather}}</p>
+        <p >{{weatherData.temp | number:0}}&deg;F</p>
+    </div>
+
+    <div>
+        <div ng-repeat="profile in savedPlaces" class="saved-profile">
+            <span ng-click="deleteWeather(profile)" class="delete-button">X</span>
+            <p>{{profile.location}}</p>
+            <p>{{profile.weather}}</p>
+            <p >{{profile.temp | number:0}}&deg;F</p>
+        </div>
+    </div>
+
 </div>
