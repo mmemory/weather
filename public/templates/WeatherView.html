@@ -1,8 +1,8 @@
 <div>
     <div>
         <h1>Weather App</h1>
-        <p>Enter a zip code in the text field below. You can save snapshots of the weather data you receive</p>
-        <input type="text" ng-model="zipCode" placeholder="zipcode...">
+        <p>Enter a zip code in the text field below. You can save snapshots of the weather data you receive.</p>
+        <input type="text" ng-model="zipCode" placeholder="Zip Code...">
         <button ng-click="getData(zipCode)">GET WEATHER</button>
         <button ng-if="weatherData" ng-click="saveWeather(weatherData)">Save</button>
     </div>
@@ -10,7 +10,7 @@
     <div ng-if="weatherData">
         <p>{{weatherData.location}}</p>
         <p>{{weatherData.weather}}</p>
-        <p >{{weatherData.temp | number:0}}&deg;F</p>
+        <p>{{weatherData.temp | number:0}}&deg;F</p>
     </div>
 
     <div>
