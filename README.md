@@ -5,7 +5,7 @@ This app receives data from the www.openweathermap.org API. Users have the abili
 ## Running the App
 This app uses AngularJS, NodeJS, and MongoDB. Bower is also necessary to set up the front end libraries.
 
-To run the app, download the files, make sure MongoDB is running, and run the following commands in the command terminal from the root folder:
+To run the app download the repository files, make sure MongoDB is running, and run the following commands in the command terminal from the root folder:
 
 ````bash
 npm install
