@@ -20,3 +20,6 @@ npm start
 ````
 
 The app should start running on the port specified in the terminal window.
+
+
+~ CHANGES TO THE REPO :) ~
