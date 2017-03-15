@@ -19,4 +19,5 @@ bower install
 npm start
 ````
 
-The app should start running on the port specified in the terminal window.
+
+This app needs more dank memes, please.
